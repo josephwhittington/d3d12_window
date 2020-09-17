@@ -48,7 +48,7 @@ int CALLBACK WinMain(
 	HWND hWnd = CreateWindow(
 		szWindowClass,
 		szTitle,
-		WS_OVERLAPPEDWINDOW,
+		WS_OVERLAPPED | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX | WS_MAXIMIZEBOX, // Stops the window from resizing
 		CW_USEDEFAULT, CW_USEDEFAULT,
 		1440, 900,
 		NULL,
